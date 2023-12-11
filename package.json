@@ -1,0 +1,45 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^3.1.2",
+    "lucide-react": "^0.294.0",
+    "next": "latest",
+    "next-themes": "^0.2.1",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-nibble": "^8.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "latest",
+    "prettier": "^3.1.0",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": "18.18.0",
+    "npm": "10.2.1"
+  }
+}

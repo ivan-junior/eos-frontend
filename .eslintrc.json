@@ -1,0 +1,70 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:prettier/recommended"
+	],
+	"overrides": [
+		{
+			"env": {
+				"node": true
+			},
+			"files": [
+				"src/**/*.ts",
+				"src/**/*.tsx"
+			],
+			"parserOptions": {
+				"sourceType": "script"
+			}
+		}
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"react"
+	],
+	"ignorePatterns": [
+		"/.next",
+		"/.vscode",
+		"/node_modules",
+		"/public",
+		"*.d.ts",
+		".eslintrc.js",
+		"next.config.js",
+		"postcss.config.js",
+		"tailwind.config.ts"
+	],
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{
+				"printWidth": 120,
+				"useTabs": true,
+				"singleQuote": true,
+				"trailingComma": "none",
+				"arrowParens": "always",
+				"semi": false,
+				"endOfLine": "auto",
+				"jsxSingleQuote": true
+			},
+			{
+				"usePrettierrc": false
+			}
+		]
+	}
+}
