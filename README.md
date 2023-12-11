@@ -8,7 +8,13 @@ Você pode utilizar a url enviada via email para testar o projeto publicado. E p
 
 - Clone o reporitório
 - No terminal, rode ``npm install`` e depois ``npm run dev``
+- Na raiz do projeto, crie um arquivo ``.env.development`` com as seguintes variáveis de ambiente:
+- ``NODE_ENV=development``
+- ``NEXT_PUBLIC_API_VERSION=v1``
+- ``NEXT_PUBLIC_API_BASE_URL=http://localhost:3333/v1``
 - No seu browser preferido, abra http://localhost:3000
+
+A variável de ambiente ``http://localhost:3000:3333`` é a url do backend. Configure o setup dele primeiro para a o projeto rodar por completo
 
 ## Descrição das Libs/Framework
 - Next.js versão 13 com TypeScript versão 5
