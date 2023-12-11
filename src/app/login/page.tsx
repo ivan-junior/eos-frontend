@@ -5,6 +5,9 @@ export const metadata: Metadata = {
 	title: 'Login'
 }
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export default function Login() {
 	return (
 		<div className='p-4 sm:p-8 w-full flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900 gap-5'>

@@ -1,6 +1,9 @@
 import { cookies } from 'next/headers'
 import { Post } from '@/interfaces/Post'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export default async function Admin() {
 	const token = cookies().get('token')?.value
 	const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/post/all`, {
