@@ -1,4 +1,3 @@
-import { redirect } from 'next/navigation'
 import { Metadata } from 'next'
 
 export const dynamic = 'force-dynamic'
@@ -13,5 +12,5 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-	redirect('/login')
+	return <div>Oi</div>
 }
