@@ -2,6 +2,7 @@ import { cookies } from 'next/headers'
 import Post from '@/components/Post'
 import { Post as PostInterface } from '@/interfaces/Post'
 import { Metadata } from 'next'
+import { redirect } from 'next/navigation'
 
 export const metadata: Metadata = {
 	title: 'Seu Feed'
@@ -12,6 +13,9 @@ export const revalidate = 0
 
 export default async function Feed() {
 	const token = cookies().get('token')?.value
+	if (!token) {
+		redirect('/login')
+	}
 	const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/post/all`, {
 		headers: {
 			'Content-Type': 'application/json',

@@ -2,6 +2,7 @@ import ProfileForm from '@/components/ProfileForm'
 import getUserFromToken from '@/lib/user'
 import { Metadata } from 'next'
 import { cookies } from 'next/headers'
+import { redirect } from 'next/navigation'
 
 export const metadata: Metadata = {
 	title: 'Perfil'
@@ -12,6 +13,9 @@ export const revalidate = 0
 
 export default async function Profile() {
 	const token = cookies().get('token')?.value
+	if (!token) {
+		redirect('/login')
+	}
 	const user = getUserFromToken()
 	const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/user/one/${user.userId}`, {
 		headers: {

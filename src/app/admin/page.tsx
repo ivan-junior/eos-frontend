@@ -1,11 +1,15 @@
 import { cookies } from 'next/headers'
 import { Post } from '@/interfaces/Post'
+import { redirect } from 'next/navigation'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
 export default async function Admin() {
 	const token = cookies().get('token')?.value
+	if (!token) {
+		redirect('/login')
+	}
 	const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/post/all`, {
 		headers: {
 			'Content-Type': 'application/json',
