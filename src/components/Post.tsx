@@ -151,7 +151,7 @@ export default function Post({ postData }: { postData: Post }) {
 	}
 
 	return (
-		<div className='p-4 sm:p-8 bg-white dark:bg-gray-800 w-full rounded-lg max-w-3xl space-y-4'>
+		<div className='p-4 sm:p-8 bg-white text-black dark:text-white dark:bg-gray-800 w-full rounded-lg max-w-3xl space-y-4'>
 			<div className='flex flex-col'>
 				<div className='flex items-center gap-4'>
 					<div className='border rounded-full'>

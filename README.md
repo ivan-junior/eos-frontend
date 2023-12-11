@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EOS Teste - Backend
 
-## Getting Started
+Backend do Teste da EOS
 
-First, run the development server:
+## Instruções
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Você pode utilizar a url enviada via email para testar o projeto publicado. E para rodar em localhost, siga as instruções abaixo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Clone o reporitório
+- No terminal, rode ``npm install`` e depois ``npm run dev``
+- Happy coding!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Descrição das Libs/Framework
+- Next.js versão 13 com TypeScript versão 5
+- ESLint com Prettier
+- Lucide React como biblioteca de ícones
+- Next Themes para preferência de cores
+- Dayjs para lidar com datas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Para entrar no Mailtrap e ver o envio de emails funcionando, acesse o Mailtrap com essas credenciais:
 
-## Learn More
+- Email: ivanbjunior.93+eos@gmail.com
+- Senha: EOS@6QvMfyNvy2
+- Link de acesso: [https://mailtrap.io/signin](https://mailtrap.io/signin)
 
-To learn more about Next.js, take a look at the following resources:
+### Requisitos Funcionais
+- O usuário deve poder fazer o login
+- O usuário deve poder ver/criar/alterar o seu perfil
+- O usuário deve poder ver/criar/alterar/excluir um post
+- O usuário deve poder ver/criar/alterar/excluir um comentário em um post
+- O usuário deve poder dar like ou dislike nos posts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Regras
+- Somente o usuário admin pode ver ou excluir os outros perfis que não seja o dele mesmo (regra criada somente demonstração de verificação de permissões)
+- Apenas o proprietário do post pode editar ou excluir o post
+- Apenas o proprietário do comentário pode editar um comentário
+- Apenas o proprietário do post e o dono do comentário podem excluir um comentário
+- Apenas o proprietário do comentário pode editar o comentário

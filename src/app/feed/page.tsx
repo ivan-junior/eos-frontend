@@ -24,7 +24,7 @@ export default async function Feed() {
 	})
 	const posts: PostInterface[] = await res.json()
 	return (
-		<div className='p-4 sm:p-8 w-full flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900 gap-5'>
+		<div className='p-4 sm:p-8 w-full flex flex-col justify-center items-center bg-gray-100 text-black dark:text-white dark:bg-gray-900 gap-5'>
 			<div className='text-3xl'>Feed</div>
 			{posts.map((post) => {
 				return <Post postData={post} key={post.id} />

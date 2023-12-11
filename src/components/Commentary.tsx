@@ -73,7 +73,7 @@ export default function CommentaryComponent({
 	}
 
 	return (
-		<div className='bg-gray-700 p-2 my-4 rounded-lg'>
+		<div className='bg-zinc-200 dark:bg-gray-700 p-2 my-4 rounded-lg'>
 			<div className='flex items-center gap-4'>
 				<div className='border rounded-full'>
 					<User2 size={24} />

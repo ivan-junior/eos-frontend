@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang='pt-BR' suppressHydrationWarning>
 			<body className={`${inter.className} dark:bg-gray-900 dark:text-gray-100`}>
-				<ThemeProvider attribute='class' enableSystem>
+				<ThemeProvider attribute='class' defaultTheme='dark' forcedTheme='dark' enableSystem={false}>
 					<main className='min-h-[100dvh] grid grid-rows-[auto_1fr_auto] transition-all'>
 						<Header />
 						{children}
