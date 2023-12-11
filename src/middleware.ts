@@ -4,7 +4,7 @@ export function middleware(request: NextRequest) {
 	const token = request.cookies.get('token')?.value
 	const pathName = request.nextUrl.pathname
 	const protectedPaths = ['/feed', '/post', '/profile', '/admin']
-	const isPathProtected = protectedPaths.some((path) => pathName == path)
+	const isPathProtected = protectedPaths.some((path) => pathName === path)
 
 	if (isPathProtected) {
 		if (!token) {

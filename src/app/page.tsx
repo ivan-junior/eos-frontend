@@ -1,7 +1,6 @@
 import { redirect } from 'next/navigation'
 import { cookies } from 'next/headers'
 import { Metadata } from 'next'
-import Feed from './feed/page'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
@@ -18,6 +17,7 @@ export default function Home() {
 	const token = cookies().get('token')?.value
 	if (!token) {
 		redirect('/login')
+	} else {
+		redirect('/feed')
 	}
-	return <Feed />
 }
