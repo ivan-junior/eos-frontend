@@ -8,7 +8,7 @@ Você pode utilizar a url enviada via email para testar o projeto publicado. E p
 
 - Clone o reporitório
 - No terminal, rode ``npm install`` e depois ``npm run dev``
-- Happy coding!
+- No seu browser preferido, abra http://localhost:3000
 
 ## Descrição das Libs/Framework
 - Next.js versão 13 com TypeScript versão 5
@@ -17,7 +17,7 @@ Você pode utilizar a url enviada via email para testar o projeto publicado. E p
 - Next Themes para preferência de cores
 - Dayjs para lidar com datas
 
-Para entrar no Mailtrap e ver o envio de emails funcionando, acesse o Mailtrap com essas credenciais:
+Para ver o envio de emails funcionando, acesse o Mailtrap com essas credenciais:
 
 - Email: ivanbjunior.93+eos@gmail.com
 - Senha: EOS@6QvMfyNvy2
