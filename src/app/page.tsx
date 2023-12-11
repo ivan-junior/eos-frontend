@@ -1,4 +1,6 @@
 import { Metadata } from 'next'
+import { cookies } from 'next/headers'
+import { redirect } from 'next/navigation'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
@@ -12,5 +14,10 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-	return <div>Oi</div>
+	const token = cookies().get('token')?.value
+	if (token) {
+		redirect('/feed')
+	} else {
+		redirect('/login')
+	}
 }

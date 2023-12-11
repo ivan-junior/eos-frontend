@@ -11,7 +11,7 @@ export default function Header() {
 						<Link href='/profile'>Perfil</Link>
 						<Link href='/feed'>Feed</Link>
 						<Link href='/post/new'>Novo post</Link>
-						<Link href='/admin'>Admin</Link>
+						<Link href='/admin'>Relatório de posts</Link>
 					</div>
 				</div>
 			</div>
