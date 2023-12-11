@@ -1,6 +1,6 @@
 # EOS Teste - Frontend
 
-Frontedn do Teste da EOS
+Frontend do Teste da EOS
 
 ## Instruções
 
